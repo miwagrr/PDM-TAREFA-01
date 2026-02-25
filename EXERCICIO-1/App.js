@@ -1,7 +1,7 @@
 import { Button, ImageBackground, TextInput, StyleSheet, SafeAreaView, Text, View } from 'react-native';
 import React, { useState } from 'react';
 
-const bgImage = require('./assets/BG-aulaP02');
+const bgImage = require('./assets/BG-aulaP02.png');
 
 export default function Teste() {
   const [nome,setNome] = useState('');
