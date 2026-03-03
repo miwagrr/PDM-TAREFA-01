@@ -1,4 +1,5 @@
-import { Button, ImageBackground, TextInput, StyleSheet, SafeAreaView, Text, View } from 'react-native';
+import { Button, ImageBackground, TextInput, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import React, { useState } from 'react';
 
 const bgImage = require('./assets/BG-aulaP02.png');
