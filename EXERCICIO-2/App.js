@@ -1,4 +1,5 @@
-import { Image, ImageBackground, ScrollView, StyleSheet, SafeAreaView} from 'react-native';
+import { Image, ImageBackground, ScrollView, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import React, { useState } from 'react';
 
 const bgImage = require('./assets/FUNDO');
@@ -15,6 +16,7 @@ export default function Teste() {
 
   return(
     <ImageBackground source={bgImage} style={styles.bg}>
+    <SafeAreaView style={styles.container}>
     <ScrollView style={styles.scroll}>
 
     <Image source={carta1} style={styles.cartas}/>
@@ -24,6 +26,7 @@ export default function Teste() {
     <Image source={carta2} style={styles.cartas}/>
     <Image source={carta6} style={styles.cartas}/>
     </ScrollView>
+    </SafeAreaView>
     </ImageBackground>
   );
 }
